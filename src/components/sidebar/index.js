@@ -29,7 +29,7 @@ const Sidebar = () => {
 						className={
 							isSelected === 'dashboard'
 								? 'sidenav-icon-div sidenav-active'
-								: 'sidenav-icon-div'
+								: 'sidenav-icon-div sidenav-inactive'
 						}
 						onClick={() => handleListItemClick('dashboard')}
 					>
@@ -39,7 +39,7 @@ const Sidebar = () => {
 						className={
 							isSelected === 'notes'
 								? 'sidenav-icon-div sidenav-active'
-								: 'sidenav-icon-div'
+								: 'sidenav-icon-div sidenav-inactive'
 						}
 						onClick={() => handleListItemClick('notes')}
 					>

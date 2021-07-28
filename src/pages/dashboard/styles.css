@@ -1,5 +1,186 @@
 .dashboard-container {
 	background-color: #f3f5f7;
 	flex: 1;
-	padding: 0px 24px;
+}
+
+.cards-conatiner {
+	display: flex;
+	flex-direction: row;
+	padding-top: 16px;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	background: #ffffff;
+	border: 1px solid #eaeaea;
+	width: 20vw;
+	min-width: 293px;
+	height: 50vh;
+	box-sizing: border-box;
+	box-shadow: 0px 2px 4px #ebebeb;
+	border-radius: 10px;
+	margin-left: 24px;
+}
+
+.agenda-card-header {
+	justify-content: space-between;
+}
+
+.card-header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border-bottom: 1px solid #eaeaea;
+	padding: 0px 16px 0px 24px;
+}
+
+.card-header-left-div {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.card-icon {
+	width: 20px;
+	height: 20px;
+}
+
+.card-title {
+	margin-left: 16px;
+	margin-right: 8px;
+}
+
+.card-body {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	padding: 24px 27px 16px;
+}
+
+.checklist-div {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.checklist-input {
+	height: 16px;
+	width: 16px;
+	margin: 8px 8px 8px 0px;
+}
+
+input[type='checkbox'] {
+	position: relative;
+	cursor: pointer;
+	background: #ffffff;
+	border: 2px solid #e5e5e5;
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+
+input[type='checkbox']:before {
+	background-color: pink;
+}
+
+input[type='checkbox']:checked:after {
+	background-color: khaki;
+}
+
+.card-footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 26px;
+}
+
+.card-button {
+	display: flex;
+	align-items: center;
+	background: #ffffff;
+	border: 1px solid #e5e5e5;
+	box-sizing: border-box;
+	border-radius: 10px;
+	padding: 10px 24px;
+}
+
+.card-button.active {
+	background: rgba(234, 234, 234, 0.4);
+	border: 1px solid #e5e5e5;
+	cursor: pointer;
+}
+
+.button-text.active {
+	color: #272727 !important;
+}
+
+.button-text {
+	color: rgba(39, 39, 39, 0.6);
+	margin: 0px 0px 0px 16px;
+}
+
+.notes-div {
+	background: #f9f9f9;
+	border: 1px solid #e5e5e5;
+	box-sizing: border-box;
+	border-radius: 10px;
+	flex: 1;
+	width: 100%;
+	max-height: 26vh;
+	padding: 16px;
+}
+
+.note-div {
+	border: 0px;
+	resize: none;
+	height: 100%;
+	width: 100%;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 8px;
+	line-height: 10px;
+	color: #272727;
+	background-color: inherit;
+	outline: 0px;
+}
+
+.notes-warning {
+	color: #d85988;
+	margin: auto;
+}
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 70%;
+	left: 50%;
+	margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
 }
