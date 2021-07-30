@@ -58,8 +58,17 @@
 }
 
 .profile-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	height: 24px;
 	width: 24px;
 	border: 4px solid #2ce3a0;
+	border-radius: 50%;
+}
+
+.profile-picture {
+	width: 20px;
+	height: 20px;
 	border-radius: 50%;
 }

@@ -14,8 +14,6 @@ const MainPage = () => {
 			<Switch>
 				<Redirect exact from={`/`} to={`/dashboard`} />
 				<Route exact path={`/dashboard`} component={DashboardPage} />
-
-				{/* <Route exact path={`/`} component={DashboardPage} /> */}
 				<Route exact path={`/notes`} component={NotesPage} />
 			</Switch>
 		</div>
